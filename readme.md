@@ -1,6 +1,10 @@
 ﻿split-2-folders
 ===
 
+[![NuGet Badge](https://buildstats.info/nuget/split2folders)](https://www.nuget.org/packages/split2folders/)
+
+[![Build Stats](https://buildstats.info/github/chart/ZanyBaka/split-2-folders?showStats=false)]()
+
 Scans the current folder with the specified file mask and splits all the found files
 by creation or modification date into separate folders like "yyyy.MM"
 
@@ -29,7 +33,7 @@ split2folders.exe -m -f "yyyy.MM" *.*   - splits by modification date with the s
 ```
 
 ### Before
-![](Example.png))
+![](Example.png)
 
 ### After
-![](Example2.png))
+![](Example2.png)
