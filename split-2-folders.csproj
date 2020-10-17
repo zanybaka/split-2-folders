@@ -6,5 +6,27 @@
     <RootNamespace>split_2_folders</RootNamespace>
     <AssemblyName>split2folders</AssemblyName>
   </PropertyGroup>
-
+  <!-- Dotnet Tool Specific settings -->
+  <PropertyGroup>
+    <PackAsTool>true</PackAsTool>
+    <PackageId>split2folders</PackageId>
+    <Title>split2folders</Title>
+    <ToolCommandName>split2folders</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>ZanyBaka</Authors>
+    <Owners>ZanyBaka</Owners>
+    <PackageDescription>Scans the current folder with the specified file mask and splits all the found files by creation or modification date into separate folders like “YYYY.MM”</PackageDescription>
+    <PackageTags>csharp split folders files group date creation modification</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/zanybaka/split-2-folders</RepositoryUrl>
+    <PackageReleaseNotes>Initial version</PackageReleaseNotes>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="LICENSE" Pack="True" Visible="False" PackagePath="">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

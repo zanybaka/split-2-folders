@@ -1,26 +1,35 @@
-﻿## Description
+﻿split-2-folders
+===
 
-<p>
 Scans the current folder with the specified file mask and splits all the found files
-by creation or modification date into separate folders like "YYYY.MM"
-</p>
+by creation or modification date into separate folders like "yyyy.MM"
 
-## Usage
+Get started
+---
 
-<pre>
-split2folders.exe [option] &lt;mask&gt;
-</pre>
+The tool is intended to be used as a global dotnet tool:
 
-## Examples
+```shell
+dotnet tool install -g split2folders
+```
 
-<pre>
-split2folders.exe *.*      - splits by creation date
-split2folders.exe -c *.*   - splits by creation date
-split2folders.exe -m *.*   - splits by modification date
-</pre>
+Then you can run it directly from the command line:
+
+```shell
+split2folders.exe [options] <mask>
+```
+
+Examples:
+```shell
+split2folders.exe *.*                   - splits by creation date
+split2folders.exe -c *.*                - splits by creation date
+split2folders.exe -f "yyyy MM dd" *.*   - splits by creation date with the specified format
+split2folders.exe -m *.*                - splits by modification date
+split2folders.exe -m -f "yyyy.MM" *.*   - splits by modification date with the specified format
+```
 
 ### Before
-![alt](Example.png))
+![](Example.png))
 
 ### After
-![alt](Example2.png))
+![](Example2.png))
